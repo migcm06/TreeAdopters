@@ -43,11 +43,11 @@ const speakersContainer = document.querySelector('.speakers');
 function card(speaker) {
   return `
     <div class="speaker">
-      <img src="${speaker.photo}" alt="${speaker.name}">
-      <h2>${speaker.name}</h2>
+      <img src="${speaker.photo}" alt="${speaker.name}" class="speaker-pic">
+      <h2 class="speaker-name">${speaker.name}</h2>
       <div class="speaker-line"></div>
-      <p>${speaker.ocupation || 'no ocupation'}</p>
-      <p>${speaker.description}</p>
+      <p class="speaker-ocupation">${speaker.ocupation || ''}</p>
+      <p class="speaker-description">${speaker.description}</p>
     </div>
   `;
 }
