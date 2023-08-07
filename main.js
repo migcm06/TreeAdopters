@@ -39,7 +39,7 @@ const speakers = [
 
 const speakersContainer = document.querySelector('.speakers');
 const moreBtn = document.getElementById('moreBtn');
-const initialVisibleSpeakers = 2; // Número inicial de speakers visibles
+const initialVisibleSpeakers = 2;
 let visibleSpeakers = initialVisibleSpeakers;
 
 function card(speaker) {
@@ -56,18 +56,18 @@ function card(speaker) {
   `;
 }
 
-function mostrarMasSpeakers() {
+function showSpeakers() {
   visibleSpeakers = speakers.length;
-  renderizarSpeakers();
+  callingSpeakers();
   moreBtn.style.display = 'none';
 }
 
-function renderizarSpeakers() {
+function callingSpeakers() {
   speakersContainer.innerHTML = '';
 
-  for (let i = 0; i < visibleSpeakers; i++) {
-    const tarjetaHTML = card(speakers[i]);
-    speakersContainer.innerHTML += tarjetaHTML;
+  for (let i = 0; i < visibleSpeakers; i += 1) {
+    const cardHTML = card(speakers[i]);
+    speakersContainer.innerHTML += cardHTML;
   }
 
   if (visibleSpeakers < speakers.length) {
@@ -77,17 +77,17 @@ function renderizarSpeakers() {
   }
 }
 
-moreBtn.addEventListener('click', mostrarMasSpeakers);
+moreBtn.addEventListener('click', showSpeakers);
 
-function ajustarVisibilidad() {
-  if (window.innerWidth <= 768) { // Cambiar el valor según la pantalla deseada
+function visibility() {
+  if (window.innerWidth <= 768) { 
     visibleSpeakers = initialVisibleSpeakers;
   } else {
     visibleSpeakers = speakers.length;
   }
-  renderizarSpeakers();
+  callingSpeakers();
 }
 
-window.addEventListener('resize', ajustarVisibilidad);
+window.addEventListener('resize', visibility);
 
-ajustarVisibilidad();
+visibility();
