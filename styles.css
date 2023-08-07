@@ -96,6 +96,14 @@ h2 {
   color: white;
 }
 
+.green-line {
+  width: 30px;
+  height: 2px;
+  background-color: rgb(44, 179, 62);
+  margin-bottom: 7%;
+  margin-top: -3%;
+}
+
 .description {
   color: white;
   font-family: 'Lato', sans-serif;
