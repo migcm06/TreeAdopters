@@ -4,7 +4,8 @@ const speakers = [
     name: 'Yochai Benkler',
     ocupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-  },  {
+  },
+  {
     photo: './images/speaker3.png',
     name: 'SohYeong Noh',
     ocupation: 'Director of Art Centre Nabi and a board member of CC Korea',
@@ -35,8 +36,6 @@ const speakers = [
     description: 'Ryan had been leading open-source projects at the Mozilla Foundation such as the open-source movement',
   },
 ];
-
-console.log(speakers);
 
 const speakersContainer = document.querySelector('.speakers');
 
