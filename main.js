@@ -38,22 +38,56 @@ const speakers = [
 ];
 
 const speakersContainer = document.querySelector('.speakers');
+const moreBtn = document.getElementById('moreBtn');
+const initialVisibleSpeakers = 2; // Número inicial de speakers visibles
+let visibleSpeakers = initialVisibleSpeakers;
 
 function card(speaker) {
   return `
     <div class="speaker-container">
       <img src="${speaker.photo}" alt="${speaker.name}" class="speaker-pic">
       <div class="text-speaker">
-      <h4 class="speaker-name">${speaker.name}</h4>
-      <p class="speaker-ocupation">${speaker.ocupation || ''}</p>
-      <div class="speaker-line"></div>
-      <p class="speaker-description">${speaker.description}</p>
+        <h4 class="speaker-name">${speaker.name}</h4>
+        <p class="speaker-ocupation">${speaker.ocupation || ''}</p>
+        <div class="speaker-line"></div>
+        <p class="speaker-description">${speaker.description}</p>
       </div>
     </div>
   `;
 }
 
-speakers.forEach((speaker) => {
-  const tarjetaHTML = card(speaker);
-  speakersContainer.innerHTML += tarjetaHTML;
-});
+function mostrarMasSpeakers() {
+  visibleSpeakers = speakers.length;
+  renderizarSpeakers();
+  moreBtn.style.display = 'none';
+}
+
+function renderizarSpeakers() {
+  speakersContainer.innerHTML = '';
+
+  for (let i = 0; i < visibleSpeakers; i++) {
+    const tarjetaHTML = card(speakers[i]);
+    speakersContainer.innerHTML += tarjetaHTML;
+  }
+
+  if (visibleSpeakers < speakers.length) {
+    moreBtn.style.display = 'block';
+  } else {
+    moreBtn.style.display = 'none';
+  }
+}
+
+moreBtn.addEventListener('click', mostrarMasSpeakers);
+
+function ajustarVisibilidad() {
+  if (window.innerWidth <= 768) { // Cambiar el valor según la pantalla deseada
+    visibleSpeakers = initialVisibleSpeakers;
+  } else {
+    visibleSpeakers = speakers.length;
+  }
+  renderizarSpeakers();
+}
+
+window.addEventListener('resize', ajustarVisibilidad);
+
+ajustarVisibilidad();
