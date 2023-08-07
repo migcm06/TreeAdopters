@@ -56,12 +56,6 @@ function card(speaker) {
   `;
 }
 
-function showSpeakers() {
-  visibleSpeakers = speakers.length;
-  callingSpeakers();
-  moreBtn.style.display = 'none';
-}
-
 function callingSpeakers() {
   speakersContainer.innerHTML = '';
 
@@ -77,10 +71,14 @@ function callingSpeakers() {
   }
 }
 
-moreBtn.addEventListener('click', showSpeakers);
+function showSpeakers() {
+  visibleSpeakers = speakers.length;
+  callingSpeakers();
+  moreBtn.style.display = 'none';
+}
 
 function visibility() {
-  if (window.innerWidth <= 768) { 
+  if (window.innerWidth <= 768) {
     visibleSpeakers = initialVisibleSpeakers;
   } else {
     visibleSpeakers = speakers.length;
@@ -88,6 +86,7 @@ function visibility() {
   callingSpeakers();
 }
 
+moreBtn.addEventListener('click', showSpeakers);
 window.addEventListener('resize', visibility);
 
 visibility();
