@@ -37,3 +37,22 @@ const speakers = [
 ];
 
 console.log(speakers);
+
+const speakersContainer = document.querySelector('.speakers');
+
+function card(speaker) {
+  return `
+    <div class="speaker">
+      <img src="${speaker.photo}" alt="${speaker.name}">
+      <h2>${speaker.name}</h2>
+      <div class="speaker-line"></div>
+      <p>${speaker.ocupation || 'no ocupation'}</p>
+      <p>${speaker.description}</p>
+    </div>
+  `;
+}
+
+speakers.forEach((speaker) => {
+  const tarjetaHTML = card(speaker);
+  speakersContainer.innerHTML += tarjetaHTML;
+});
