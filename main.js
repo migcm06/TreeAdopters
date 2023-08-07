@@ -4,18 +4,18 @@ const speakers = [
     name: 'Yochai Benkler',
     ocupation: 'Berkman Professor of Entrepreneurial Legal Studies at Harvard Law School',
     description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-  },
-  {
-    photo: './images/speaker2.png',
-    name: 'Kilnam Chon',
-    description: 'Benkler studies commons-based peer production, and published his seminal book, The Wealth of Networks in 2006',
-  },
-  {
+  },  {
     photo: './images/speaker3.png',
     name: 'SohYeong Noh',
     ocupation: 'Director of Art Centre Nabi and a board member of CC Korea',
     description: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012, he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
   },
+  {
+    photo: './images/speaker2.png',
+    name: 'Kilnam Chon',
+    description: 'Kilnam Chon helped bring the internet to Asia and is an outspoken advocate for the open web and digital com-mons. In 2012. he was inducted into the inaugural class of the Internet Society’s (ISOC) Internet Hall of Fame',
+  },
+
   {
     photo: './images/speaker4.png',
     name: 'Julia Leda',
@@ -42,12 +42,13 @@ const speakersContainer = document.querySelector('.speakers');
 
 function card(speaker) {
   return `
-    <div class="speaker">
+    <div class="speaker-container">
       <img src="${speaker.photo}" alt="${speaker.name}" class="speaker-pic">
-      <h4 class="speaker-name">${speaker.name}</h4>
+      <div class="text-speaker"><h4 class="speaker-name">${speaker.name}</h4>
       <div class="speaker-line"></div>
       <p class="speaker-ocupation">${speaker.ocupation || ''}</p>
       <p class="speaker-description">${speaker.description}</p>
+      </div>
     </div>
   `;
 }
