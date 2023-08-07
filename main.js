@@ -44,7 +44,7 @@ function card(speaker) {
   return `
     <div class="speaker">
       <img src="${speaker.photo}" alt="${speaker.name}" class="speaker-pic">
-      <h2 class="speaker-name">${speaker.name}</h2>
+      <h4 class="speaker-name">${speaker.name}</h4>
       <div class="speaker-line"></div>
       <p class="speaker-ocupation">${speaker.ocupation || ''}</p>
       <p class="speaker-description">${speaker.description}</p>
