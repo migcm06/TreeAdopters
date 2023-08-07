@@ -43,9 +43,10 @@ function card(speaker) {
   return `
     <div class="speaker-container">
       <img src="${speaker.photo}" alt="${speaker.name}" class="speaker-pic">
-      <div class="text-speaker"><h4 class="speaker-name">${speaker.name}</h4>
-      <div class="speaker-line"></div>
+      <div class="text-speaker">
+      <h4 class="speaker-name">${speaker.name}</h4>
       <p class="speaker-ocupation">${speaker.ocupation || ''}</p>
+      <div class="speaker-line"></div>
       <p class="speaker-description">${speaker.description}</p>
       </div>
     </div>
