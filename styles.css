@@ -16,7 +16,7 @@ nav {
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid #ccc;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .logo {
@@ -92,7 +92,8 @@ main {
   color: rgba(2, 34, 7, 0.822);
 }
 
-h2, .description {
+h2,
+.description {
   color: white;
 }
 
