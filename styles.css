@@ -266,7 +266,7 @@ h4 {
   margin-top: 15%;
   padding: 1%;
   background-color: rgba(28, 121, 40, 0.76);
-  border: 6%;
+  border-radius: 6%;
 }
 
 .center {
@@ -331,7 +331,7 @@ h5 {
   font-size: 16px;
   line-height: 21px;
   text-align: center;
-  color:  rgba(131, 131, 131, 1);
+  color: rgba(131, 131, 131, 1);
   margin: 2%;
 }
 
@@ -339,6 +339,7 @@ h5 {
   position: relative;
   margin-top: 3%;
 }
+
 .logo-img {
   width: 88%;
   margin: 10% 5%;
