@@ -12,11 +12,12 @@ nav {
   display: flex;
   flex-direction: row-reverse;
   width: 100%;
-  height: 20%;
+  height: auto;
   justify-content: space-between;
   background-color: rgba(255, 255, 255, 1);
   border-bottom: 1px solid #ccc;
   box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  position: fixed;
 }
 
 .logo {
@@ -38,7 +39,7 @@ nav {
 }
 
 h1 {
-  color: rgb(7, 83, 30);
+  color: rgb(255, 255, 255);
   font-family: 'Lato', sans-serif;
   font-weight: 900;
   padding: 5%;
@@ -69,10 +70,11 @@ main {
   color: rgb(238, 253, 244);
 }
 
-.text-card {
+.text-card,
+.about-p-f {
   background-color: rgba(28, 121, 40, 0.76);
   margin: 3% 5%;
-  border: 3px solid rgba(190, 229, 195, 0.76);
+  border: 3px solid rgba(190, 229, 195, 0.5);
   padding: 1%;
 }
 
@@ -176,6 +178,9 @@ h2 {
 .feature-title {
   color: #000;
   color: rgb(7, 83, 30);
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 28px;
 }
 
 .green-line.two {
@@ -244,4 +249,112 @@ h4 {
 
 .arrow {
   width: 2.5%;
+}
+
+#about {
+  background-image: url(./images/hojas.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+}
+
+.a-p {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  margin-top: 15%;
+  padding: 1%;
+  background-color: rgba(28, 121, 40, 0.76);
+  border: 6%;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h5 {
+  color: rgb(255, 255, 255);
+  font-family: 'Lato', sans-serif;
+  font-weight: 900;
+  padding: 5%;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-p-f,
+.contact {
+  margin: 5%;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  text-align: center;
+  color: white;
+}
+
+.contact {
+  width: 82%;
+  color: #ffffffb0;
+  align-self: center;
+}
+
+.logo-t,
+.see-t {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 10%;
+  width: 80%;
+  align-self: center;
+  color: rgb(7, 83, 30);
+}
+
+.brand-logo {
+  background-color: white;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(102, 124, 109);
+}
+
+.logo-info,
+.see-info {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color:  rgba(131, 131, 131, 1);
+}
+
+.brand-logo > .green-line {
+  position: relative;
+  margin-top: 3%;
+}
+.logo-img {
+  width: 88%;
+  margin: 10% 5%;
+}
+
+.see-the-past {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.see-the-past > .green-line {
+  position: relative;
+  margin-top: 3%;
+}
+
+.see-info {
+  font-size: 12px;
 }
