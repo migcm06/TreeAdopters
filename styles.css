@@ -229,3 +229,19 @@ h4 {
   background-color: rgba(44, 179, 62, 0.664);
   margin: 2% 0;
 }
+
+#moreBtn {
+  font-family: 'Lato', sans-serif;
+  font-size: 11px;
+  line-height: 28px;
+  font-weight: 700;
+  box-shadow: 2px 2px 4px 0px rgba(13, 82, 39, 0.25);
+  text-align: center;
+  margin: 10% 2%;
+  padding: 2%;
+  border-radius: 6px;
+}
+
+.arrow {
+  width: 2.5%;
+}
