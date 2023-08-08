@@ -332,6 +332,7 @@ h5 {
   line-height: 21px;
   text-align: center;
   color:  rgba(131, 131, 131, 1);
+  margin: 2%;
 }
 
 .brand-logo > .green-line {
@@ -357,4 +358,77 @@ h5 {
 
 .see-info {
   font-size: 12px;
+  margin: 1%;
+  width: 80%;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5%;
+}
+
+.pic {
+  margin: 5% 3%;
+}
+
+.partner {
+  background-color: rgb(65, 70, 66);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-t {
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 10%;
+}
+
+.partner > .green-line {
+  position: relative;
+  margin-top: 3%;
+}
+
+.partners {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.partners > img {
+  margin-right: 6%;
+  margin-bottom: 10%;
+}
+
+footer {
+  background-color: white;
+}
+
+.end {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 1%;
+}
+
+.end > img {
+  width: 40%;
+  margin: 3% 6%;
+}
+
+.end > p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 13.08px;
+  color: rgba(59, 62, 69, 1);
 }
