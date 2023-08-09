@@ -6,13 +6,17 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 header {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  width: 100%;
+  background-color: white;
+  position: fixed;
 }
 
 .logo {
@@ -22,24 +26,23 @@ header {
 }
 
 img.menu {
-  margin-left: -5%;
   cursor: pointer;
   transition: transform 1s ease;
+  margin: 0 20% 0 5%;
 }
 
 img.menu:hover {
   transform: scale(1.05);
 }
 
-nav {
+nav { 
   opacity: 0;
   visibility: hidden;
   background-color: rgba(34, 75, 15, 0.76);
   backdrop-filter: blur(3px);
-  position: absolute;
+  position: fixed;
   top: 0;
-  left: 0;
-  bottom: 0;
+  height: 100vh;
   width: 100%;
 }
 
@@ -61,13 +64,17 @@ nav.observable {
   transform: scale(1.5);
 }
 
-li {
+li > a, li{
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 35px;
   font-weight: 500;
   margin: 13% 5%;
   transition: transform 1s ease;
+}
+
+li > a {
+  margin-left: 0;
 }
 
 li:hover {

@@ -1,6 +1,7 @@
 const nav = document.querySelector('#nav');
 const open = document.querySelector('#open');
 const close = document.querySelector('#close');
+const navLinks = document.querySelectorAll('.pages li a');
 
 open.addEventListener('click', () => {
   nav.classList.add('observable');
@@ -8,6 +9,12 @@ open.addEventListener('click', () => {
 
 close.addEventListener('click', () => {
   nav.classList.remove('observable');
+});
+
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    nav.classList.remove('observable');
+  });
 });
 
 const speakers = [
