@@ -22,7 +22,7 @@ header {
 }
 
 img.menu {
-  margin-left: -20%;
+  margin-left: -5%;
   cursor: pointer;
   transition: transform 1s ease;
 }
@@ -34,6 +34,11 @@ img.menu:hover {
 /* .pages {
   display: none;
 } */
+
+.nav {
+  opacity: 0;
+  visibility: hidden;
+}
 
 nav {
   background-color: rgba(34, 75, 15, 0.76);
@@ -278,6 +283,11 @@ h4 {
   margin: 10% 2%;
   padding: 2%;
   border-radius: 6px;
+  transition: transform 1s ease;
+}
+
+#moreBtn:hover {
+  transform:scale(0.9);
 }
 
 .arrow {
@@ -468,7 +478,7 @@ footer {
 }
 
 @media screen and (min-width: 768px) {
-  /* .menu-mobile {
+  .menu-mobile {
     display: none;
-  } */
+  }
 }
