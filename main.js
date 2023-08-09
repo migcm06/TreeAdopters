@@ -1,3 +1,15 @@
+const nav = document.querySelector('#nav');
+const open = document.querySelector('#open');
+const close = document.querySelector('#close');
+
+open.addEventListener('click', () => {
+  nav.classList.add('observable')
+})
+
+close.addEventListener('click', () => {
+  nav.classList.remove('observable');
+})
+
 const speakers = [
   {
     photo: './images/speaker1.png',

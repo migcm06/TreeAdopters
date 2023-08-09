@@ -31,16 +31,9 @@ img.menu:hover {
   transform: scale(1.05);
 }
 
-/* .pages {
-  display: none;
-} */
-
-.nav {
+nav { 
   opacity: 0;
   visibility: hidden;
-}
-
-nav {
   background-color: rgba(34, 75, 15, 0.76);
   backdrop-filter: blur(3px);
   position: absolute;
@@ -48,6 +41,11 @@ nav {
   left: 0;
   bottom: 0;
   width: 100%;
+}
+
+nav.observable {
+  opacity: 1;
+  visibility: visible;
 }
 
 .close {
@@ -287,7 +285,7 @@ h4 {
 }
 
 #moreBtn:hover {
-  transform:scale(0.9);
+  transform: scale(0.9);
 }
 
 .arrow {
