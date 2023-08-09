@@ -11,7 +11,7 @@ close.addEventListener('click', () => {
   nav.classList.remove('observable');
 });
 
-navLinks.forEach(link => {
+navLinks.forEach((link) => {
   link.addEventListener('click', () => {
     nav.classList.remove('observable');
   });

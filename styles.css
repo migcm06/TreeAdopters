@@ -35,7 +35,7 @@ img.menu:hover {
   transform: scale(1.05);
 }
 
-nav { 
+nav {
   opacity: 0;
   visibility: hidden;
   background-color: rgba(34, 75, 15, 0.76);
@@ -64,7 +64,8 @@ nav.observable {
   transform: scale(1.5);
 }
 
-li > a, li{
+li > a,
+li {
   color: white;
   font-family: 'Lato', sans-serif;
   font-size: 35px;
