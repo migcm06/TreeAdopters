@@ -31,7 +31,7 @@ img.menu:hover {
   transform: scale(1.05);
 }
 
-nav { 
+nav {
   opacity: 0;
   visibility: hidden;
   background-color: rgba(34, 75, 15, 0.76);
